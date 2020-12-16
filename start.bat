@@ -1,0 +1,1 @@
+@python tkinter_test.py %*@pause

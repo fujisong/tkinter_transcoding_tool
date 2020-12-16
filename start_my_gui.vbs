@@ -1,0 +1,1 @@
+CreateObject("WScript.Shell").run "cmd /c F:\test_framework\tkinter_transcoding_tool\start.bat",0
