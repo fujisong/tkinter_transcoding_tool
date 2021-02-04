@@ -44,7 +44,7 @@ class MY_GUI():
         self.init_data_text_scroll_y = Scrollbar(self.init_windows_name)
         self.init_data_text_scroll_y.config(command=self.result_data_text.yview)
         self.init_data_text.config(yscrollcommand=self.init_data_text_scroll_y.set)
-        self.init_data_text_scroll_y.grid(row=1, column=23, rowspan=15, sticky=NS)
+        self.init_data_text_scroll_y.grid(row=1, column=24, rowspan=15, sticky=NS)
 
         self.log_data_text = Text(self.init_windows_name, width=67, height=9)
         self.log_data_text.grid(row=13, column=0, rowspan=4, columnspan=10)

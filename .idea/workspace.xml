@@ -20,8 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac80dc5d-19e5-40af-93db-1b7a14725c49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/start.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/start_my_gui.vbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/kkkk.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/zzzz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tkinter_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_test.py" afterDir="false" />
     </list>
@@ -80,31 +81,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Python.tkinter_test">
-    <configuration name="md5_func" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/md5" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/md5/md5_func.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="tkinter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.zzzz (1)">
+    <configuration name="222" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,8 +96,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\untitled\tkinter_test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/222.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="kkkk" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:\test_framework\tkinter_transcoding_tool\dist\kkkk.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,16 +148,62 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="zzzz (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dist/zzzz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="zzzz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/dist" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="F:\test_framework\tkinter_transcoding_tool\dist\zzzz.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.tkinter" />
       <item itemvalue="Python.tkinter_test" />
-      <item itemvalue="Python.md5_func" />
+      <item itemvalue="Python.222" />
+      <item itemvalue="Python.kkkk" />
+      <item itemvalue="Python.zzzz" />
+      <item itemvalue="Python.zzzz (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.zzzz (1)" />
+        <item itemvalue="Python.222" />
+        <item itemvalue="Python.zzzz" />
+        <item itemvalue="Python.kkkk" />
         <item itemvalue="Python.tkinter_test" />
-        <item itemvalue="Python.md5_func" />
-        <item itemvalue="Python.tkinter" />
       </list>
     </recent_temporary>
   </component>
@@ -178,6 +224,9 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.bat" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -188,46 +237,56 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1362" height="244" key="GridCell.Tab.0.bottom" timestamp="1608108209524">
+    <state x="2408" y="337" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608799076376">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2408" y="337" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608799076376" />
+    <state width="1362" height="279" key="GridCell.Tab.0.bottom" timestamp="1612430430958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492403" />
-    <state width="1362" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608108209524" />
-    <state width="1362" height="244" key="GridCell.Tab.0.center" timestamp="1608108209524">
+    <state width="1362" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
+    <state width="1362" height="279" key="GridCell.Tab.0.center" timestamp="1612430430958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492403" />
-    <state width="1362" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608108209524" />
-    <state width="1362" height="244" key="GridCell.Tab.0.left" timestamp="1608108209524">
+    <state width="1362" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
+    <state width="1362" height="279" key="GridCell.Tab.0.left" timestamp="1612430430958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492402" />
-    <state width="1362" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608108209524" />
-    <state width="1362" height="244" key="GridCell.Tab.0.right" timestamp="1608108209524">
+    <state width="1362" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
+    <state width="1362" height="279" key="GridCell.Tab.0.right" timestamp="1612430430958">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492403" />
-    <state width="1362" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608108209524" />
-    <state width="1362" height="328" key="GridCell.Tab.1.bottom" timestamp="1608099998452">
+    <state width="1362" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
+    <state width="1362" height="328" key="GridCell.Tab.1.bottom" timestamp="1608278135356">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608099998452" />
-    <state width="1362" height="328" key="GridCell.Tab.1.center" timestamp="1608099998452">
+    <state width="1362" height="328" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608278135356" />
+    <state width="1362" height="328" key="GridCell.Tab.1.center" timestamp="1608278135356">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="328" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608099998452" />
-    <state width="1362" height="328" key="GridCell.Tab.1.left" timestamp="1608099998451">
+    <state width="1362" height="328" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608278135356" />
+    <state width="1362" height="328" key="GridCell.Tab.1.left" timestamp="1608278135356">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="328" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608099998451" />
-    <state width="1362" height="328" key="GridCell.Tab.1.right" timestamp="1608099998452">
+    <state width="1362" height="328" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608278135356" />
+    <state width="1362" height="328" key="GridCell.Tab.1.right" timestamp="1608278135356">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state width="1362" height="328" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608099998452" />
+    <state width="1362" height="328" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608278135356" />
+    <state x="2156" y="181" key="SettingsEditor" timestamp="1608109764470">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2156" y="181" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608109764470" />
+    <state x="2458" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1612314904123">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2458" y="450" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612314904123" />
   </component>
 </project>
