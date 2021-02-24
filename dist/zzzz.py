@@ -114,29 +114,59 @@
 #         next(t1)
 #         print('继续执行')
 #         next(t1)
-def singleton(cls):
-    instances = {}
+# def singleton(cls):
+#     instances = {}
+#
+#     def get_instance(*args, **kwargs):
+#         if cls not in instances:
+#             instances[cls] = cls(*args, **kwargs)
+#         return instances[cls]
+#     return get_instance
+#
+#
+# @singleton
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#
+# if __name__ == '__main__':
+#     c = Student(1, 2)
+#     print(c.name)
+#     print(c.age)
+#     print(id(c))
+#     b = Student(7, 4)
+#     print(id(b))
+#     print(b.name)
+#     print(b.age)
+# def nihaoa(self):
+#     print(self.gh)
+#
+#
+# sh = type("jk", (), {'gh': 123})
+# ss = type("jl", (sh,), {"nihaoa": nihaoa})
+# print(sh)
+# print(sh.gh)
+# ss.nihaoa(ss())
 
-    def get_instance(*args, **kwargs):
-        if cls not in instances:
-            instances[cls] = cls(*args, **kwargs)
-        return instances[cls]
-    return get_instance
+
+class Base:
+    pass
 
 
-@singleton
-class Student:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# 加上方法
+class ChildWithMethod(Base):
+    bar = True
 
-if __name__ == '__main__':
-    c = Student(1, 2)
-    print(c.name)
-    print(c.age)
-    print(id(c))
-    b = Student(7, 4)
-    print(id(b))
-    print(b.name)
-    print(b.age)
+    def hello(self):
+        print('hello')
+
+
+def hello():
+    print('hello')
+
+
+# 等价定义，方法用的类外面hello方法
+ChildWithMethod = type(
+    'ChildWithMethod', (Base,), {'bar': True, 'hello': hello}
 

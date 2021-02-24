@@ -20,11 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac80dc5d-19e5-40af-93db-1b7a14725c49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/kkkk.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/zzzz.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stu.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tkinter_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tkinter_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/222.py" beforeDir="false" afterPath="$PROJECT_DIR$/222.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/zzzz.py" beforeDir="false" afterPath="$PROJECT_DIR$/dist/zzzz.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,12 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Python.zzzz (1)">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\test_framework\tkinter_transcoding_tool" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.222">
     <configuration name="222" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="untitled" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -191,16 +195,16 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.tkinter_test" />
       <item itemvalue="Python.222" />
       <item itemvalue="Python.kkkk" />
-      <item itemvalue="Python.zzzz" />
+      <item itemvalue="Python.tkinter_test" />
       <item itemvalue="Python.zzzz (1)" />
+      <item itemvalue="Python.zzzz" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.zzzz (1)" />
         <item itemvalue="Python.222" />
+        <item itemvalue="Python.zzzz (1)" />
         <item itemvalue="Python.zzzz" />
         <item itemvalue="Python.kkkk" />
         <item itemvalue="Python.tkinter_test" />
@@ -244,26 +248,26 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2408" y="337" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1608799076376" />
-    <state width="1362" height="279" key="GridCell.Tab.0.bottom" timestamp="1612430430958">
+    <state width="1340" height="279" key="GridCell.Tab.0.bottom" timestamp="1614158630860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492403" />
-    <state width="1362" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
-    <state width="1362" height="279" key="GridCell.Tab.0.center" timestamp="1612430430958">
+    <state width="1340" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614158630860" />
+    <state width="1340" height="279" key="GridCell.Tab.0.center" timestamp="1614158630860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492403" />
-    <state width="1362" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
-    <state width="1362" height="279" key="GridCell.Tab.0.left" timestamp="1612430430958">
+    <state width="1340" height="279" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614158630860" />
+    <state width="1340" height="279" key="GridCell.Tab.0.left" timestamp="1614158630860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492402" />
-    <state width="1362" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
-    <state width="1362" height="279" key="GridCell.Tab.0.right" timestamp="1612430430958">
+    <state width="1340" height="279" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614158630860" />
+    <state width="1340" height="279" key="GridCell.Tab.0.right" timestamp="1614158630860">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1362" height="244" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1608101492403" />
-    <state width="1362" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1612430430958" />
+    <state width="1340" height="279" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1614158630860" />
     <state width="1362" height="328" key="GridCell.Tab.1.bottom" timestamp="1608278135356">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
