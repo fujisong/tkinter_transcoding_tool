@@ -56,18 +56,53 @@
 #
 # print(dir(LowercaseClass))  # 你会发现“BAR”和“HELLO”都变小了
 # # 用一个类的实例调用hello方法，修改了类定义时候的属性名称！！！
-import jpype, os, subprocess, chardet
 
-# jvmpath = jpype.getDefaultJVMPath()
-# print(jvmpath)
-jarpath = os.path.join(os.path.split(os.path.abspath(__file__))[0], "stu.jar")
+
 # print(os.getcwd(), jarpath)
 # jpype.startJVM(jvmpath, "-ea", "-DJava.class.path={}".format(jarpath))
 # jpype.java.lang.System.out.println("helloworld")
+import jpype
+import os
 
-command = "java -jar  -Dpassword={}  {}".format("helloworld", jarpath)
-stdout, stderror = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True).communicate()
-encoding = chardet.detect(stdout)['encoding']
-result = stdout.decode(encoding)
-print(result)
 
+class Decryption:
+    def __init__(self, name):
+        self.jarpath = os.path.join(os.path.split(os.path.abspath(__file__))[0], name)
+
+    def getcommand(self, pas) -> str:
+        return "java -jar  -Dpassword={}  {}".format(pas, self.jarpath)
+
+    def commanddecryption(self, content):
+        stdout, stderror = subprocess.Popen(self.getcommand(content), stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                                            shell=True).communicate()
+        encoding = chardet.detect(stdout)['encoding']
+        result = stdout.decode(encoding)
+        return result
+
+    def __enter__(self):
+        self.start()
+        return self
+
+    def start(self):
+        jpype.startJVM(jpype.getDefaultJVMPath(), "-ea", "-Djava.class.path={}".format(self.jarpath))
+        print("开启jvm")
+
+    def jvmdecryption(self, content):
+        JDClass = jpype.JClass("common.pass.EncryptionByFun")()
+        res = JDClass.reverse(content)
+        return res
+
+    def test(self, name):
+        jpype.java.lang.System.out.println(name)
+
+    def shutdown(self):
+        jpype.shutdownJVM()
+        print("关闭jvm")
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.shutdown()
+
+
+if __name__ == '__main__':
+    with Decryption("stujvm.jar") as f:
+        print(f.decryption("1234567"))
