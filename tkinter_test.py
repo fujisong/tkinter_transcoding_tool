@@ -11,9 +11,9 @@ from common.search_file import SearchFile
 
 LOG_LINE_NUM = 0
 
-jar = None
+djar = None
 dmethod = None
-
+f = None
 
 class MY_GUI():
     def __init__(self, init_windows_name):
@@ -59,14 +59,14 @@ class MY_GUI():
         md5_butthon.grid(row=1, column=10)
 
         self.ChoseDecryptionMethod = ttk.Combobox(self.init_windows_name, width=8, textvariable=StringVar)  # 解密方式
-        self.ChoseDecryptionMethod['value'] = ('shell解密', 'jvm解密')
+        self.ChoseDecryptionMethod['values'] = ('shell解密', 'jvm解密')
         self.ChoseDecryptionMethod.bind("<<ComboboxSelected>>", lambda f1: self.get_ChoseDecryptionMethod())
         self.ChoseDecryptionMethod.grid(row=2, column=10)
         # self.ChoseDecryptionMethod.current(0)
 
-        self.chosejar = ttk.Combobox(self.init_windows_name, width=8, textvariable=StringVar())  # 选择解密包
+        self.chosejar = ttk.Combobox(self.init_windows_name, width=8, textvariable=StringVar)  # 选择解密包
         self.chosejar['values'] = self.searchjar()
-        self.chosejar.bind("<<ComboxboxSelected>>", lambda f2: self.get_chosejar())
+        self.chosejar.bind("<<ComboboxSelected>>", lambda f2: self.get_chosejar())
         self.chosejar.grid(row=2, column=11)
         # self.chosejar.current(0)
 
@@ -100,18 +100,20 @@ class MY_GUI():
             self.write_log_to_Text("ERROR:str_trans_to_md5 failed")
 
     def jarDecryption(self):
-        src = self.init_data_text.get(1.0, END).strip().replace("\n", "").encode()
+        src = self.init_data_text.get(1.0, END).strip().replace("\n", "")
         # decrymethod = self.ChoseDecryptionMethod.get()
         # decryjar = self.chosejar.get()
         if dmethod == 'jvm解密':
-            result = self.jarjvmDecryption(jar, src)
+            result = self.jarjvmDecryption(djar, src)
             self.result_data_text.delete(1.0, END)
             self.result_data_text.insert(1.0, result)
+            print("开始关闭jvm")
+            f.shutdown()
             self.write_log_to_Text("INFO:jar解密 success")
 
         elif dmethod == 'shell解密':
-            print(jar, src)
-            result = self.jarshellDecrtpyion(str(jar), src)
+            print(djar, src)
+            result = self.jarshellDecrtpyion(str(djar), src)
             self.result_data_text.delete(1.0, END)
             self.result_data_text.insert(1.0, result)
             self.write_log_to_Text("INFO:jar解密 success")
@@ -120,8 +122,10 @@ class MY_GUI():
             self.write_log_to_Text(result)
 
     def jarjvmDecryption(self, jarname, content):
-        with Decryption(jarname) as f:
-            return f.jvmdecryption(content)
+        global f
+        f = Decryption(jarname)
+        f.start()
+        return f.jvmdecryption(content)
 
     def jarshellDecrtpyion(self, jarname, content):
         result = Decryption(jarname).commanddecryption(content)
@@ -133,9 +137,9 @@ class MY_GUI():
         return current_time
 
     def get_chosejar(self):
-        global jar
-        jar = str(self.chosejar.get())
-        print(type(jar))
+        global djar
+        djar = str(self.chosejar.get())
+        print(djar)
 
     def get_ChoseDecryptionMethod(self):
         global dmethod

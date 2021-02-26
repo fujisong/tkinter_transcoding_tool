@@ -51,4 +51,4 @@ class Decryption:
 
 if __name__ == '__main__':
     with Decryption("stujvm.jar") as f:
-        print(f.decryption("1234567"))
+        print(f.jvmdecryption("1234567"))
