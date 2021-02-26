@@ -17,7 +17,7 @@ class Decryption:
         stdout, stderror = subprocess.Popen(self.getcommand(content), stdout=subprocess.PIPE, stderr=subprocess.PIPE,
                                             shell=True).communicate()
         encoding = chardet.detect(stdout)['encoding']
-        result = stdout.decode(encoding)
+        result = stdout.decode(str(encoding))
         return result
 
     def __enter__(self):
