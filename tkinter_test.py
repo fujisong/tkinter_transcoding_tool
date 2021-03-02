@@ -15,6 +15,7 @@ djar = None
 dmethod = None
 f = None
 
+
 class MY_GUI():
     def __init__(self, init_windows_name):
         self.init_windows_name = init_windows_name
@@ -103,12 +104,14 @@ class MY_GUI():
         src = self.init_data_text.get(1.0, END).strip().replace("\n", "")
         # decrymethod = self.ChoseDecryptionMethod.get()
         # decryjar = self.chosejar.get()
+        print(dmethod)
         if dmethod == 'jvm解密':
-            result = self.jarjvmDecryption(djar, src)
+            self.starjvm(djar)
+            result = self.jarjvmDecryption(src)
             self.result_data_text.delete(1.0, END)
             self.result_data_text.insert(1.0, result)
-            print("开始关闭jvm")
-            f.shutdown()
+            # print("开始关闭jvm")
+            # self.closejvm()
             self.write_log_to_Text("INFO:jar解密 success")
 
         elif dmethod == 'shell解密':
@@ -121,11 +124,20 @@ class MY_GUI():
             result = '解密失败'
             self.write_log_to_Text(result)
 
-    def jarjvmDecryption(self, jarname, content):
+    def jarjvmDecryption(self, content):
+
+        return f.jvmdecryption(content)
+
+    def starjvm(self, jarname):
         global f
         f = Decryption(jarname)
-        f.start()
-        return f.jvmdecryption(content)
+        if f.jvmjudgment():
+            pass
+        else:
+            f.start()
+
+    def closejvm(self):
+        f.shutdown()
 
     def jarshellDecrtpyion(self, jarname, content):
         result = Decryption(jarname).commanddecryption(content)
@@ -167,4 +179,5 @@ def gui_start():
     # init_windows.mainloop()
 
 
-gui_start()
+if __name__ == '__main__':
+    gui_start()

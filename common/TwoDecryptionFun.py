@@ -41,6 +41,9 @@ class Decryption:
     def test(self, name):
         jpype.java.lang.System.out.println(name)
 
+    def jvmjudgment(self):
+        return jpype.isJVMStarted()
+
     def shutdown(self):
         jpype.shutdownJVM()
         print("关闭jvm")
